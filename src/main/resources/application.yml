@@ -6,6 +6,9 @@ camel:
     shutdownTimeout: 2
     health.indicator.enabled: true
 
+#false for testing purpose
+management.health.mail.enabled: false
+
 management:
   security:
     enabled: false
@@ -17,13 +20,13 @@ spring:
   mail:
       host: smtp.gmail.com
       port: 587
-      username: suhabb@gmail.com
+      username: youremail@gmail.com
       password:
       properties.mail.smtp.auth:  true
       properties.mail.smtp.starttls.enable: true
 
-mailto: suhabb@gmail.com
-mailFrom: suhabb@gmail.com
+mailto: youremail@gmail.com
+mailFrom: youremail@gmail.com
 
 startRoute: direct:input
 fromRoute : file:data/input?delete=true&readLock=none
@@ -49,13 +52,13 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: suhabb@gmail.com
-    password: suhabb123
+    username: youremail@gmail.com
+    password: youremail123
     properties.mail.smtp.auth:  true
     properties.mail.smtp.starttls.enable: true
 
-mailto: suhabb@gmail.com
-mailFrom: suhabb@gmail.com
+mailto: youremail@gmail.com
+mailFrom: youremail@gmail.com
 
 
 
@@ -79,13 +82,13 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: suhabb@gmail.com
-    password: suhabb123
+    username: youremail@gmail.com
+    password: youremail123
     properties.mail.smtp.auth:  true
     properties.mail.smtp.starttls.enable: true
 
-mailto: suhabb@gmail.com
-mailFrom: suhabb@gmail.com
+mailto: youremail@gmail.com
+mailFrom: youremail@gmail.com
 
 
 
@@ -109,13 +112,13 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: suhabb@gmail.com
-    password: suhabb123!
+    username: youremail@gmail.com
+    password: youremail123!
     properties.mail.smtp.auth:  true
     properties.mail.smtp.starttls.enable: true
 
-mailto: suhabb@gmail.com
-mailFrom: suhabb@gmail.com
+mailto: youremail@gmail.com
+mailFrom: youremail@gmail.com
 
 startRoute: timer:hello?period=10s
 fromRoute : file:data/input?delete=true&readLock=none&moveFailed=error
